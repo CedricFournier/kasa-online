@@ -1,0 +1,90 @@
+.collapsepropos {
+    display: flex;
+    flex-direction: column;
+    max-width: 1023px;
+    gap: 30px;
+    padding: 0 20px 0 20px;
+    margin: 38px auto 38px auto;
+    @include mobile {
+        gap: 20px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+.closecollapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 0 20px 0 15px;
+    height: 52px;
+    border-radius: 5px;
+    @include mobile {
+        height: 30px;
+        padding: 0 15px 0 10px;
+    }
+    & p {
+        color: $second-color;
+        font-size: 24px;
+        font-style: normal;
+        margin: 0;
+        @include mobile {
+            font-size: 13px;
+        }
+    }
+}
+
+.btncollapse {
+    @include item-center;
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+    @include mobile {
+        height: 20px;
+        width: 20px;
+    }
+    & img {
+        @include mobile {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    
+}
+
+.btncolopen{
+    transform: rotate(-180deg);
+    transition: 200ms ease-in-out;
+}
+
+.btncolclose {
+    transform: rotate(0deg);
+    transition: 500ms ease-in-out;
+}
+
+.toggle-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 500ms;
+}
+
+.toggle {
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    padding: 16px 20px 20px 20px;
+    @include mobile {
+        padding: 13px 20px 20px 20px;
+    }
+    & p {
+        color: $primary-color;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 142%;
+        margin: 0;
+        @include mobile {
+            font-size: 12px;
+            line-height: 142%;
+        }
+    }
+}

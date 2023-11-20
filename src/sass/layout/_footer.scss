@@ -1,0 +1,23 @@
+footer {
+    @include item-colcenter;
+    box-sizing: border-box;
+    background-color: black;
+    color: $second-color;
+    height: 209px;
+    padding: 66px 121px 29px 121px;
+    gap: 28.56px;
+    & img {
+        width: 122px;
+        height: 39.44px;
+    }
+    & p {
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 500;
+        @include mobile {
+            padding: 0 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

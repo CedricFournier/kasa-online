@@ -1,0 +1,39 @@
+.mainerror {
+    @include item-colcenter;
+    color: $primary-color;
+    & h1 {
+        font-size: 288px;
+        font-weight: 700;
+        margin: 89px 0 139px;
+        @include mobile {
+            font-size: 96px;
+            margin: 86px 0 113px;
+        }
+    }
+    & h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0 0 139px;
+        @include tablette {
+            text-align: center;
+        }
+        @include mobile {
+            font-size: 18px;
+            text-align: center;
+            width: 260px;
+            margin: 0 0 113px;
+        }
+    }
+    & a {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 0 139px;
+        @include mobile {
+            font-size: 14px;
+            margin: 0 0 113px;
+        }
+    }
+}
+
+

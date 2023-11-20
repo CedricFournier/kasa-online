@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.divbanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1240px;
+  margin: 0 auto 0 auto;
+  padding: 0 20px 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .divbanner {
+    justify-content: start;
+  }
+}
+.divbanner img {
+  border-radius: 25px;
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+@media screen and (max-width: 767px) {
+  .divbanner img {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
+.divbanner h1 {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 16px 0 16px;
+}
+@media screen and (max-width: 1023px) {
+  .divbanner h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .divbanner h1 {
+    font-size: 24px;
+    width: 190px;
+  }
+}
+
+.divcarrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1240px;
+  height: 415px;
+  margin: auto auto;
+  padding: 0 20px 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .divcarrousel {
+    height: 255px;
+  }
+}
+
+.imgcarrousel {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+@media screen and (max-width: 767px) {
+  .imgcarrousel {
+    border-radius: 10px;
+  }
+}
+
+.imgleft {
+  position: absolute;
+  left: 44px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  .imgleft {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .imgleft {
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.imgright {
+  position: absolute;
+  right: 44px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  .imgright {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .imgright {
+    right: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.counter {
+  position: absolute;
+  justify-content: center;
+  bottom: 25px;
+  color: white;
+  font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+  .counter {
+    font-size: 12px;
+    bottom: 5px;
+  }
+}
+
+.collapsepropos {
+  display: flex;
+  flex-direction: column;
+  max-width: 1023px;
+  gap: 30px;
+  padding: 0 20px 0 20px;
+  margin: 38px auto 38px auto;
+}
+@media screen and (max-width: 767px) {
+  .collapsepropos {
+    gap: 20px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+.closecollapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  padding: 0 20px 0 15px;
+  height: 52px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .closecollapse {
+    height: 30px;
+    padding: 0 15px 0 10px;
+  }
+}
+.closecollapse p {
+  color: white;
+  font-size: 24px;
+  font-style: normal;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .closecollapse p {
+    font-size: 13px;
+  }
+}
+
+.btncollapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF6060;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .btncollapse {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btncollapse img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.btncolopen {
+  transform: rotate(-180deg);
+  transition: 200ms ease-in-out;
+}
+
+.btncolclose {
+  transform: rotate(0deg);
+  transition: 500ms ease-in-out;
+}
+
+.toggle-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 500ms;
+}
+
+.toggle {
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  padding: 16px 20px 20px 20px;
+}
+@media screen and (max-width: 767px) {
+  .toggle {
+    padding: 13px 20px 20px 20px;
+  }
+}
+.toggle p {
+  color: #FF6060;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 142%;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .toggle p {
+    font-size: 12px;
+    line-height: 142%;
+  }
+}
+
+.mainerror {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+}
+.mainerror h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 89px 0 139px;
+}
+@media screen and (max-width: 767px) {
+  .mainerror h1 {
+    font-size: 96px;
+    margin: 86px 0 113px;
+  }
+}
+.mainerror h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 139px;
+}
+@media screen and (max-width: 1023px) {
+  .mainerror h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainerror h2 {
+    font-size: 18px;
+    text-align: center;
+    width: 260px;
+    margin: 0 0 113px;
+  }
+}
+.mainerror a {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 139px;
+}
+@media screen and (max-width: 767px) {
+  .mainerror a {
+    font-size: 14px;
+    margin: 0 0 113px;
+  }
+}
+
+.sectioninfolog {
+  padding: 0 20px 0 20px;
+}
+
+.divinfo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 30px auto 0 auto;
+  color: #FF6060;
+}
+@media screen and (max-width: 767px) {
+  .divinfo {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+
+.h1info {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .h1info {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.locationinfo {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .locationinfo {
+    font-size: 14px;
+  }
+}
+
+.divtag {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .divtag {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+}
+.divtag p {
+  display: flex;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  height: 25px;
+  padding: 0 22px 0 22px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+  .divtag p {
+    font-size: 10px;
+    height: 18px;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .divrathost {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+.divhost {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 21px;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .divhost {
+    margin: 0;
+  }
+}
+.divhost p {
+  text-align: right;
+  margin: 0;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .divhost p {
+    font-size: 12px;
+  }
+}
+.divhost img {
+  height: 64px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .divhost img {
+    height: 32px;
+  }
+}
+
+.divcolinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+  max-width: 1240px;
+  margin: 24px auto 50px auto;
+}
+@media screen and (max-width: 767px) {
+  .divcolinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 13px auto 27px auto;
+  }
+}
+
+.sectionitemlog {
+  box-sizing: border-box;
+  max-width: 1240px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 60px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin: 43px auto 50px auto;
+  padding: 56px 50px 43px 50px;
+}
+@media screen and (max-width: 1023px) {
+  .sectionitemlog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
+    padding: 22px 20px 27px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sectionitemlog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto 0 auto;
+    padding: 22px 20px 27px 20px;
+  }
+}
+.sectionitemlog article a {
+  display: block;
+  position: relative;
+  z-index: 4;
+}
+@media screen and (max-width: 767px) {
+  .sectionitemlog article a {
+    height: 255px;
+  }
+}
+.sectionitemlog article a h2 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 80%;
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  color: white;
+  z-index: 2;
+}
+.sectionitemlog article a div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  .sectionitemlog article a div::after {
+    height: 100%;
+  }
+}
+.sectionitemlog article a div img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .sectionitemlog article a div img {
+    height: 255px;
+  }
+}
+
+.divrating {
+  display: flex;
+  gap: 9px;
+  height: 36px;
+}
+@media screen and (max-width: 767px) {
+  .divrating {
+    height: 15px;
+    gap: 4px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  height: 209px;
+  padding: 66px 121px 29px 121px;
+  gap: 28.56px;
+}
+footer img {
+  width: 122px;
+  height: 39.44px;
+}
+footer p {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  footer p {
+    padding: 0 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  height: 68px;
+  margin: 25px auto 23px auto;
+  padding: 20px 20px 27px 20px;
+}
+@media screen and (max-width: 767px) {
+  header {
+    margin: 0;
+    height: 47px;
+  }
+}
+header img {
+  height: 68px;
+  width: 210px;
+}
+@media screen and (max-width: 767px) {
+  header img {
+    height: 47px;
+    width: 145px;
+  }
+}
+header a {
+  font-size: 24px;
+  color: #FF6060;
+  text-decoration: none;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  header a {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.linkpropos {
+  margin-left: 57px;
+}
+@media screen and (max-width: 767px) {
+  .linkpropos {
+    margin-left: 26px;
+  }
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

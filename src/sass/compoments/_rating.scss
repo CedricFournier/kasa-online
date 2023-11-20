@@ -1,0 +1,9 @@
+.divrating {
+    display: flex;
+    gap: 9px;
+    height: 36px;
+    @include mobile {
+        height: 15px;
+        gap: 4px;
+    }
+}
